@@ -1,10 +1,10 @@
 print(True or False)
 print(7 != 3 and 2 > 3)
 # XOR - ou exclusisvo
-print(True != False)
-print(False != True)
-print(True != True)
-print(False != False)
+# print(True != False)
+# print(False != True)
+# print(True != True)
+# print(False != False)
 
 # Operadores bit-a-bit
 '''
@@ -22,7 +22,7 @@ saldo_positivo = saldo > 0
 despesas_controladas = salario - despesas >= 0.2 * salario
 
 meta = saldo_positivo and despesas_controladas
-if meta != False:
-    print("Meta batida")
-else:
-    print("Meta não batida")
+# if meta == True:
+#     print("Meta batida")
+# else:
+#     print("Meta não batida")
