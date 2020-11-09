@@ -17,6 +17,6 @@ with open('valores_celulares.txt', 'w') as arquivo:
     for valor in valores_celulares:
         arquivo.write("R$ " + (str(valor)) + '\n')
 
-with open('valores_celulares.txt', 'r') as arquivo:
-    for valor in valores_celulares:
-        print(valor)
+# with open('valores_celulares.txt', 'r') as arquivo:
+#     for valor in arquivo:
+#         print(valor)
