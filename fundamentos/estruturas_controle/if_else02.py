@@ -1,49 +1,18 @@
-import sys
-import errno
-
-
-def conceito(valor):
-    nota = float(valor)
-    if nota > 10:
-        return 'Nota inválida'
-    elif nota > 9:
-        return 'A'
-    elif nota > 8:
-        return 'A-'
-    elif nota > 7:
-        return 'B'
-    elif nota > 6:
-        return 'B-'
-    elif nota > 5:
-        return 'C'
-    elif nota > 4:
-        return 'C-'
-    elif nota > 3:
-        return 'D'
-    elif nota > 2:
-        return 'D-'
-    elif nota > 1:
-        return 'E'
-    elif nota >= 0:
-        return 'E-'
+def faixa_etaria(idade):
+    if 0 <= idade < 18:
+        return 'Menor de idade.'
+    elif idade in range(18, 65):
+        return 'Adulto.'
+    elif idade in range(65, 100):
+        return 'Melhor idade'
+    elif idade >= 100:
+        return 'Centenário'
     else:
-        'Nota inválida.'
-
-
-def help():
-    print('É necessário informar a nota do aluno!')
-    print(f'Sintaxe: {sys.argv[0][2:]} <nota>')
+        return 'Idade inválida.'
 
 
 if __name__ == '__main__':
-    if len(sys.argv) < 2:
-        help()
-        sys.exit(errno.EPERM)
-    elif not sys.argv[1].isnumeric():
-        help()
-        print('A nota deve ser um valor numérico.')
-        print('tipo: sys.argv[1] =', type(sys.argv[1]))
-        sys.exit(errno.EINVAL)
-    nota = float(sys.argv[1])
-    print('Conceito do Aluno:', conceito(nota))
-    print(type(sys.argv[1]))
+    # idades = (17, 35, 87, 119, -2)
+    # for idade in idades:
+    for idade in (17, 35, 87, 119, -2):
+        print(f'{idade} anos: {faixa_etaria(idade)}')
