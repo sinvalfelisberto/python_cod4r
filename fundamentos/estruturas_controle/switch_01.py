@@ -1,4 +1,6 @@
 #! python
+# conding: utf-8
+
 def get_dia_semana(dia):
     dias = {
         1: 'Domingo',
