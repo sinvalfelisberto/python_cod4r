@@ -24,5 +24,5 @@ def get_tipo_dia(dia):
 
 
 if __name__ == '__main__':
-    for dia in range(1, 8):
+    for dia in range(0, 9):
         print(f'{dia}: {get_dia_semana(dia)} - {get_tipo_dia(dia)}')
