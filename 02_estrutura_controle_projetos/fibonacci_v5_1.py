@@ -10,5 +10,5 @@ def fibonacci(termos):
 
 
 if __name__ == '__main__':
-    termo = int(input('Digite o termo desejado: '))
-    print(f'O termo desejado é {fibonacci(termo)}')
+    # termo = int(input('Digite o termo desejado: '))
+    print(f'O termo desejado é {fibonacci(1)}')

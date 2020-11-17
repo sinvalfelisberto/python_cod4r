@@ -8,7 +8,9 @@ for texto in textos:
     found = False
     for palavra in texto.lower().split():
         if palavra in PALAVRAS_PROIBIDAS:
-            print('Texto possui pelo menos uma palavra proibida.', palavra)
+            print(
+                'Texto possui pelo menos uma palavra proibida São Plíça',
+                palavra)
             found = True
             break
     if not found:
