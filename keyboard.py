@@ -3,10 +3,11 @@ from time import sleep
 
 keyboard = Controller()
 
-for seconds in range(12000):
-    sleep(0.5)
+for seconds in range(101):
+    sleep(0.1)
+
     keyboard.press(Key.alt)
     keyboard.press('l')
-    keyboard.release(Key.alt)
     keyboard.release('l')
-    print(f'Done {seconds}')
+    keyboard.release(Key.alt)
+    print(f'Foi pressionada {seconds}x.')
