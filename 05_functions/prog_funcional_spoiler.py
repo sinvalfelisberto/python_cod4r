@@ -1,6 +1,8 @@
 def executar(funcao):
     if callable(funcao):
         funcao()
+    else:
+        print('não é função')
 
 
 def bom_dia():
@@ -11,8 +13,7 @@ def boa_tarde():
     print('Boa tarde!')
 
 
-if __name__ == "__main__":
-    pass
+if __name__ == '__main__':
     executar(bom_dia)
     executar(boa_tarde)
     executar(321)

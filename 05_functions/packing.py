@@ -21,7 +21,7 @@ if __name__ == '__main__':
     print(soma_n(10, 20))
     print(soma_n(10, 20, 30, 50, 100, 350, 345, 95))
     # unpacking = pegar os parâmetros de um lista/tupla...
-    nums = [3, 4, 13]
-    nums1 = (7, 3, 90)
-    print(soma_n(*nums))
-    print(soma_n(*nums1))
+    lista_nums = [3, 4, 13]
+    tupla_nums = (7, 3, 90)
+    print(f'usando unpacking com lista: {soma_n(*lista_nums)}')
+    print(f'usando unpackig com tupla: {soma_n(*tupla_nums)}')
