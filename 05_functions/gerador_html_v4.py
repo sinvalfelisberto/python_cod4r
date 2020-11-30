@@ -24,4 +24,4 @@ if __name__ == '__main__':
     # Aqui, depois de chamar a função, são listados os valores que irão compor
     # a tupla que será usada pelo *args
     print(tag_bloco(tag_lista,
-                    'Sábado', 'Domingo', classe='error', inline=True))
+                    'Sábado', 'Domingo', classe='info', inline=True))
