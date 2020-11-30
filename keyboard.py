@@ -15,6 +15,7 @@ for seconds in range(3):
 
 def pressiona(valor):
     for i in range(valor):
+        i
         keyboard.press(Key.caps_lock)
         keyboard.release(Key.caps_lock)
         sleep(0.2)
